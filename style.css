@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+	text-align: center;
+}
+
+#root {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 50px 80px 50px 50px;
+	line-height: 50px;
+}
+#root p {
+	margin-top: 60%;
+	transform: rotateZ(90deg);
+}
+#front-end {
+	grid-column: 3/4;
+	grid-row: 3/4;
+	background-color: gray;
+	padding: 0 15px;
+	line-height: 80px;
+}
+#HTML {
+	grid-column: 3/6;
+	grid-row: 2/3;
+	background-color: blue;
+}
+#CSS {
+	grid-column: 4/5;
+	grid-row: 3/6;
+	background-color: green;
+}
+#JavaScript {
+	grid-column: 1/4;
+	grid-row: 4/5;
+	background-color: orange;
+}
+#ReactJS {
+	grid-column: 2/3;
+	grid-row: 1/4;
+	background-color: red;
+}
